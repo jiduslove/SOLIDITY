@@ -23,7 +23,7 @@ contract BYTES {
      function setA(bytes memory _a) public {
             a = _a;
      }
-// 아스키코드를 보면 문자열 "1"은 31, "6"은 36이기 때문에 0x3136이 Deploy에 값이 나오는것임.(문자열로 값을 call했기 때문)
+// 16을 아스키코드에서 보면 문자열 "1"은 31, "6"은 36이기 때문에 0x3136이 Deploy에 값이 나오는것임.(문자열로 값을 call했기 때문)
      function setA2() public {
          a = "16";
      }

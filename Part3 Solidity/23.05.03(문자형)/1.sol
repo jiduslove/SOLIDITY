@@ -26,7 +26,6 @@ contract UintandString {
         b = _b;
     }
 // 상태변수에 있는 b를 불러온다.
-// b 값을 반환했다?
 // string 형태는 값이 비어서 나온다.
     function getB() public view returns (string memory){
         return b;
