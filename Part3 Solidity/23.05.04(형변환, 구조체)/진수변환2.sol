@@ -20,7 +20,7 @@ pragma solidity ^0.8.18;
 // bytes는 좀 더 엄격하고 섬세하다.
 // uint는 256을 붙이지 않아도 상관없다. 
 // bytes32는 bytes memory와 같을 수 있지만 다르다. 이유는 bytes32는 자리수가 정해져있지만 bytes memory 자리수가 정해져있지 않다.
-// bytes memory는 정적이여서 자리수가 정해져있지 않고, bytes 옆에 용량이 정해지면 동적이여서 자리수가 정해진다.
+// bytes memory는 동동적이여서 자리수가 정해져있지 않고, bytes 옆에 용량이 정해지면 정적이여서 자리수가 정해진다.
 // bytes _d 는 기본적으로 64자리?
 
 

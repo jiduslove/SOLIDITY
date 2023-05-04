@@ -3,7 +3,7 @@
 pragma solidity ^0.8.18;
 
 //최종목표 첫글자가 무엇인지 알아내는것.
-//bytes는 16진수 2자리.
+//1bytes는 16진수 2자리.
 //아래 내용은 string에서 bytes, bytes에서 string으로 변환하는 과정.
 
 contract StringAndBytes {
@@ -35,7 +35,7 @@ contract StringAndBytes {
         _b = bytes(_a); // _b에 _a의 bytes 형변환 정보 대입
         return _b[0];
     }
-// 이건 아예 모르겠음.
+
 // 자리수가 명확하게 
 // new (초기사이즈를 결정을 해준다?) 
 // new bytes(1) -> 시작은 1로하되 필요에 따라서 바꿀수 있다. (쉽게 1자리 bytes로 선언했다라고 생각하면 됨.)
@@ -159,9 +159,11 @@ contract Array_s {
     }
 }
 
-// 학생의 정보를 관리할때 이름,번호,나이 등의 다양한 정보가 있는데 서로 다른 형태의 정보가 
+/*학생의 정보를 관리할때 이름,번호,나이 등의 다양한 정보가 있는데 
+서로 다른 형태의 정보가 한개에 묶여서 하나의 변수처럼 움직이는 아이*/
+
 // 구조체 : 여러가지 변수들을 달고 다닌다는 특징이 있음.
-// array (같은형만 들어감) , 구조체 (다른형이 들어감감)
+// array (같은형만 들어감) , 구조체 (다른형이 들어감)
 contract Struct {
     struct Student {
         string name;
