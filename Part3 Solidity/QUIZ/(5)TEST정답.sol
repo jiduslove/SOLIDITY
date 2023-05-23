@@ -14,7 +14,7 @@ pragma solidity ^0.8.18;
 
 contract Q5 {
 
-    function divideNumber(uint _n) public pure returns(uint, uint[] memory) {
+    function divideNumber(uint _n) public pure returns(uint[] memory) {
         uint[] memory b = new uint[](getLength(_n));
 
         uint i=getLength(_n);
@@ -22,12 +22,16 @@ contract Q5 {
             b[--i] = _n%10;
             _n = _n/10;
         }
-        return (b.length , b);
+        return (b);
     }
 
     function getLength(uint _n) public pure returns(uint) {
+        if(_n==0) {
+            return 1;
+        }
+
         uint a;
-        while(_n > 10**a) {
+        while(_n >= 10**a) {
             a++;
         }
         return a;
